@@ -52,7 +52,7 @@ resource apimServiceName_demo_conference_api 'Microsoft.ApiManagement/service/ap
     apiRevision: '1'
     description: 'A sample API with information related to a technical conference.  The available resources  include *Speakers*, *Sessions* and *Topics*.  A single write operation is available to provide  feedback on a session.'
     subscriptionRequired: true
-    serviceUrl: WebAppURL
+    serviceUrl: 'https://${WebAppURL}'
     protocols: [
       'http'
       'https'
