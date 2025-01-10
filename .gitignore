@@ -1,1 +1,5 @@
 .azure
+/.vs
+/ConferenceAPI/bin
+/ConferenceAPI/obj
+/ConferenceAPI/Properties
