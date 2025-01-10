@@ -1,0 +1,266 @@
+[
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/100",
+    "session_id": "100",
+    "title": "Keynote with Dan North - Jackstones: the Journey to Mastery",
+    "timeslot": "04 December 2013 09:00 - 10:00",
+    "speaker": "Dan North",
+    "description": "It takes time to become really good at something. Time, commitment and a genuine passion. If you're not having fun the learning is a chore, if you are then it hardly feels like learning at all, at least not like the thing they made you do in school. Craftsmanship is about making that commitment and then figuring out how to see it through.  Using examples of mastery from various fields and a thirty year paper-folding habit, Dan describes some of the many facets of craftsmanship and tries to figure out exactly what the craft is that we programmers do."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/101",
+    "session_id": "101",
+    "title": "\r\n\t\t\tAsync in C# 5\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": "Jon Skeet",
+    "description": "C# 5 introduces a new syntax for asynchronous methods, making it easier than ever to write efficient asynchronous code. This session will introduce the new syntax, and show how it can be used to make your code more responsive. We'll also look at how the new async features are implemented, and how they can be used in other contexts."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/102",
+    "session_id": "102",
+    "title": "\r\n\t\t\tIntroducing Visual Studio 2013\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": null,
+    "description": "Visual Studio 2013 is the best tool for developers and teams to build and deliver modern, connected applications on all of Microsoft's platforms. From Windows Azure and SQL Server to Windows 8.1 and Windows Phone 8, Visual Studio 2013 supports the breadth of Microsoft's developer platforms. In this demo-filled session, we'll show you how Visual Studio 2013 enables you to build modern applications that span connected devices and continuous services, from the web to the cloud."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/103",
+    "session_id": "103",
+    "title": "\r\n\t\t\tCleaning up Code Smell\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": "Venkat Subramaniam",
+    "description": "Code smell is an indicator that something might be wrong. It's a symptom of a problem. In this presentation, we will discuss some common code smells and how to clean them up. We will discuss how to identify the smells, how to refactor the code, and how to prevent the smells from occurring in the future."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/104",
+    "session_id": "104",
+    "title": "\r\n\t\t\tASP.NET Web API 2: HTTP Services for the Modern Web and Mobile Applications\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": "Daniel Roth",
+    "description": "ASP.NET Web API 2 is the latest evolution of Microsoft's framework for building HTTP services that can reach a broad range of clients including browsers, phones, and tablets. Web API 2 includes a number of new features that make it a great platform for building modern web and mobile applications. In this session, we'll explore Web API 2 and show you how to build and consume services that can reach a variety of clients including browsers and mobile devices."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/105",
+    "session_id": "105",
+    "title": "\r\n\t\t\tEventStore - an introduction to a DSD for event sourcing and notifications\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": "Liam Westley",
+    "description": "Ever thought about using event sourcing to enable CQRS (Command Query Responsibility Segregation), or did you just want an easy manner of creating an audit trail or a notification system? EventStore: (http://geteventstore.com/) is an open source DSD (Domain Specific Database) engine designed just for that, driven forward by Greg Young (https://twitter.com/gregyoung and http://codebetter.com/gregyoung/)."
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/106",
+    "session_id": "106",
+    "title": "\r\n\t\t\tData-Bind everything!\r\n\t\t",
+    "timeslot": "04 December 2013 10:20 - 11:20",
+    "speaker": "Stuart Lodge",
+    "description": "An in-depth look at the fun we've had extending data-binding in MvvmCross. In this hour, we'll quickly skip over the basics, look inside how it's built, and then spend  most of our time touring through some of the advanced techniques we've experimented with in building MvvmCross. No live coding, but plenty of code demos including animations, internationalisation, custom controls, custom binding, validation, multi-binding, field-binding, method-binding, maps and more.\""
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/107",
+    "session_id": "107",
+    "title": "\r\n\t\t\tMaking Magic: Combining Data, Information, Services and Programming, at Internet-Scale\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Don Syme",
+    "description": "\r\n\t\t\tMaking Magic: Combining Data, Information, Services and Programming, at Internet-Scale\r\n\t\t\r\nSimplify your data access, simplify your life, by magic.\nThe modern web and enterprise is information rich, but our programming languages are information sparse, especially our strongly typed ones. \"Information Rich Programming\" (IRP) is an exciting direction for language design and implementation, and the innovative and open F# language is leading the way in this area. In this talk, we'll give an overview of the challenges of strongly-typed IRP against web data markets, web ontologies, databases, services and enterprise data schema. Are information spaces \"just\" libraries? Can we gives types to \"everything\", and if so, should we? What does it mean for future languages? We'll demonstrate what F# 3.0 specifically offers in the area of IRP, but also look at how information-richness makes us reconsider programming language and tooling design more generally, and take a look at the themes that recur in this kind of work.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/108",
+    "session_id": "108",
+    "title": "\r\n\t\t\tSimple.Web 101\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Mark Rendle",
+    "description": "\r\n\t\t\tSimple.Web 101\r\n\t\t\r\nA high-speed introduction to a fast, light, non-blocking .NET/Mono web framework. Founded on the principle that MVC is a \"broken\" pattern, Simple.Web applies the SOLID design principles to web application development, and makes building web applications an experience of the deepest joy. Simple.Web makes keeping your code clean, and building real REST/HATEOAS APIs, as easy as falling off an extremely wobbly log while wearing clown shoes. Or your money back!*\n* Money-back guarantee may be** a lie.\n** Is definitely.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/109",
+    "session_id": "109",
+    "title": "\r\n\t\t\tTen cool things we can do with popular JVM Languages\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Venkat Subramaniam",
+    "description": "\r\n\t\t\tTen cool things we can do with popular JVM Languages\r\n\t\t\r\nLanguages offer a lot more than syntax and compilers. They often have supporting libraries and special facilities that set them apart from other languages. Some languages offer special compiler support for a particular construct, like tail call optimization, for example. Others provide interesting library support or capabilities. In this presentation we will dive into 10 cool things we can do with different languages on the JVM, to improve our productivity and ease development. If mixing languages is an option on your projects, you will have ten more reasons to move forward after this presentation.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/110",
+    "session_id": "110",
+    "title": "\r\n\t\t\tRx and the TPL: Cats and Dogs Living Together??\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Paul Betts",
+    "description": "\r\n\t\t\tRx and the TPL: Cats and Dogs Living Together??\r\n\t\t\r\nAsynchronous programming is all the rage these days, with good reason. Withthe introduction of async/await in C# 5.0, writing truly non-blocking code hasgone from a giant headache, to something we should be doing all the time.However, two technologies have emerged from Microsoft, the Task ParallelLibrary, and the less common but emerging technology, the Reactive Extensionsfor .NET. Which should developers be using? Does Task&lt;T&gt; and async/awaitreplace Rx?In fact, the best answer is, \"Use both!\" This talk will describe how Task&lt;T&gt;and Rx's IObservable can be used together to produce truly elegant,functional, and far more testable code than using either technology inisolation. Through plenty of code examples, we'll see how to use Rx to testand mock Task&lt;T&gt; methods, how to write LINQ'y async code, and when to use RxZen Nature and when to use Task Zen Nature.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/111",
+    "session_id": "111",
+    "title": "\r\n\t\t\tScripting your web API development using scriptcs\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Glenn Block",
+    "description": "\r\n\t\t\tScripting your web API development using scriptcs\r\n\t\t\r\nWhat if I could show you how to author web APIs really fast and in any text editor of your choice, would you believe me? Scriptcs is a new OSS tool that provides a lightweight scripting experience for C#, one that lets you write apps in a simple editor like Sublime Text. It also works great for authoring and consuming web APIs. Come to this talk and we&rsquo;ll look at scriptcs, and how it can greatly simplify your web api development. Though our focus will be web API, we will also touch on how the same approach can work for other frameworks like Nancy and Simple Web.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/112",
+    "session_id": "112",
+    "title": "\r\n\t\t\tThe Development Landscape Is Moving Extremely Fast! Here\u2019s How To Move Faster.\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Jon Galloway",
+    "description": "\r\n\t\t\tThe Development Landscape Is Moving Extremely Fast! Hereâ€™s How To Move Faster.\r\n\t\t\r\nKeeping up with today&rsquo;s development world is a really tough challenge. How can you keep up, let alone master anything? Learn how to keep up - and have fun doing it - with a three part approach: mental models, the right development tools, and efficient systems for learning new information.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/113",
+    "session_id": "113",
+    "title": "\r\n\t\t\tECMAScript 6: what\u2019s next for JavaScript?\r\n\t\t",
+    "timeslot": "04 December 2013 11:40 - 12:40",
+    "speaker": "Axel Rauschmayer",
+    "description": "\r\n\t\t\tECMAScript 6: whatâ€™s next for JavaScript?\r\n\t\t\r\nThe next version of JavaScript is called ECMAScript 6 (the current one is ECMAScript 5). This version will be a standard by the end of 2014, but you can already use it now, on current engines. This talk explains how to do that, after giving a thorough tour of the new language features: block-scoped variables, arrow functions, better parameter handling, classes, modules and more. We will also look at the goals and the design process for ECMAScript 6.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/114",
+    "session_id": "114",
+    "title": "\r\n\t\t\tIntroduction to Windows Azure Part I\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Scott Guthrie",
+    "description": "\r\n\t\t\tIntroduction to Windows Azure Part I\r\n\t\t\r\nThis two part talk will provide an overview of Windows Azure &ndash; including a quick tour (with lots and lots of demos) of its features, and how you can take advantage of it to build great applications in the cloud.  This talk provides a great way to learn more about how to get started with Microsoft&rsquo;s Cloud Platform, and leave understanding how you can take advantage of its capabilities.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/115",
+    "session_id": "115",
+    "title": "\r\n\t\t\tDoing data science with F#\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Tomas Petricek",
+    "description": "\r\n\t\t\tDoing data science with F#\r\n\t\t\r\nThe ability to take data, understand it, visualize it and extract useful information from it is becoming a hugely important skill. How can you turn all those logs, histories of purchases and trades or open government data, into useful information that help your business make money?\nIn this talk, we&rsquo;ll look at doing data science using F#. The F# language is perfectly suited for this task &ndash; type providers integrate external data directly into the language &ndash; your language suddenly _understands_ CSV, XML, JSON, REST services and other sources. The interactive development style makes it easy to explore data and test your algorithms as you&rsquo;re writing them. Rich set of libraries for working with data frames, time series and for visualization gives you all the tools you need. And finally &ndash; F# easily integrates with statistical environments like R and Matlab, giving you access to the industry standard libraries.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/116",
+    "session_id": "116",
+    "title": "\r\n\t\t\tI want to develop for SharePoint, but I don\u2019t know where to start\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Sahil Malik",
+    "description": "\r\n\t\t\tI want to develop for SharePoint, but I donâ€™t know where to start\r\n\t\t\r\nSharePoint is interesting, but I don't know where to start. This session, is for you, the aspiring SharePoint developer. I will walk you through the fundamental building blocks for how to move from zero to hero.\nSpecific topics in this session will include core programming skills, investing in the right areas to optimize your learning curve, free resources and tools to help you get started, tips and tricks to get you on your way, and more.\nIf you're looking to get started, but need some help in your journey then make sure you check out this session!\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/117",
+    "session_id": "117",
+    "title": "\r\n\t\t\tAdopting Continuous Delivery\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Jez Humble",
+    "description": "\r\n\t\t\tAdopting Continuous Delivery\r\n\t\t\r\nWhile keeping software production ready throughout its lifecycle and optimizing your delivery process for shorter cycle times might seem like a good idea to you, the rest of your organization might not share your excitement. In this talk, I share stories from companies who have attempted to adopt continuous delivery and discusses the organizational, architectural and process factors that led to the success &ndash; or failure &ndash; of these initiatives.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/118",
+    "session_id": "118",
+    "title": "\r\n\t\t\tThe missing link \u2013 hypermedia in Web API.\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Darrel Miller",
+    "description": "\r\n\t\t\tThe missing link â€“ hypermedia in Web API.\r\n\t\t\r\nWeb API provides a foundation for building HTTP based distributed systems. However the support forgenerating hypermedia based responses is minimal. This talk will try and fill the gap by providing practical examples of hypermedia use in ASP.NET Web API.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/119",
+    "session_id": "119",
+    "title": "\r\n\t\t\tCQRS with Erlang\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Bryan Hunter",
+    "description": "\r\n\t\t\tCQRS with Erlang\r\n\t\t\r\nErlang is an industry-proven functional programming language with unmatched sweet-spots in fault-tolerance, concurrency, and distribution. RabbitMQ, CouchDB. Facebook Chat, Opcode Chef, and WhatsApp are written in Erlang, and more than half of the world's mobile phone traffic is driven by Erlang. Erlang is also opensource, and cross-platform.\nCQRS is an architectural pattern that separates commands (which mutate state) from queries (which return values). With CQRS the &ldquo;read&rdquo; data store and the &ldquo;write&rdquo; data store can be on different severs, can use different storage engines, and can be scaled independently. CQRS is often linked with the Event Sourcing pattern which models state as a series of events (past tense verbs) rather than a single &ldquo;latest&rdquo; value. What works for an accountant&rsquo;s ledger (and for Git) can work for our &ldquo;write&rdquo; store too. Given a series of events, we can deal with concurrency and collisions more intelligently than &ldquo;last guy wins&rdquo;. We can also define varied service level agreements for our commands and our queries.\nCQRS promotes distribution, concurrency and eventual consistency which is dandy until we attempt to code an implementation with conventional tools like C# or Java. Lucky for us, Erlang is unconventional in all the right ways. Many of the ideas of CQRS dovetail perfectly with the sweet-spots of Erlang.In this session we will dive into CQRS, and explore a sample implementation written in Erlang. We will spotlight a few areas where CQRS with Erlang shines.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/120",
+    "session_id": "120",
+    "title": "\r\n\t\t\tCallable entities in ECMAScript 6\r\n\t\t",
+    "timeslot": "04 December 2013 13:40 - 14:40",
+    "speaker": "Axel Rauschmayer",
+    "description": "\r\n\t\t\tCallable entities in ECMAScript 6\r\n\t\t\r\nIn ECMAScript 5, functions do triple duty: they are normal functions, methods and constructors. This is confusing, can lead to functions being used incorrectly and shadows &ldquo;this&rdquo; in normal functions.\nECMAScript 6 fixes the aforementioned problems by introducing more &ldquo;callable entities&rdquo;: arrow functions, classes, method definitions, generator functions and generator methods.\nThis talk explains how these callable entities work and how they fix the problems.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/121",
+    "session_id": "121",
+    "title": "\r\n\t\t\tIntroduction to Windows Azure Part II\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Scott Guthrie",
+    "description": "\r\n\t\t\tIntroduction to Windows Azure Part II\r\n\t\t\r\nThis two part talk will provide an overview of Windows Azure &ndash; including a quick tour (with lots and lots of demos) of its features, and how you can take advantage of it to build great applications in the cloud.  This talk provides a great way to learn more about how to get started with Microsoft&rsquo;s Cloud Platform, and leave understanding how you can take advantage of its capabilities.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/122",
+    "session_id": "122",
+    "title": "\r\n\t\t\tDefending .NET/C# Applications - Layered Security\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Jon McCoy",
+    "description": "\r\n\t\t\tDefending .NET/C# Applications - Layered Security\r\n\t\t\r\nThis speech will look at what a .NET developer should know about and plan for when building a defensible application. I will show how common aspects of software development can inevitably create secure or unsecure systems, and how proper data flow and defendable segmentation can be the cornerstone of good security. This will show how an application&rsquo;s design can drastically impact the security of production systems and networks.I will cover some code level tactics for building secure applications but this speech will focus on high-level planning, life-cycle, process, practice, and design.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/123",
+    "session_id": "123",
+    "title": "\r\n\t\t\tTo Estimate or Not to Estimate \u2013 is that the question?\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Marit Rossnes",
+    "description": "\r\n\t\t\tTo Estimate or Not to Estimate â€“ is that the question?\r\n\t\t\r\nThere is a lot of hype on not estimating these days. In this talk, I will try to dig deeper into the topic. What is wrong with estimates? And if estimation is not a productive practise, where does that leave us? Do we need to acquire a new set of skills to manage our projects; not based on cost and size, but rather built on a thourough understanding of business value.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/124",
+    "session_id": "124",
+    "title": "\r\n\t\t\tThe Lean Enterprise\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Jez Humble",
+    "description": "\r\n\t\t\tThe Lean Enterprise\r\n\t\t\r\nLarge organizations are notoriously bad at disruptive innovation involving software. This is due both to organizational barriers and a lack of good engineering practices. In this presentation Jez will take a scientific approach to innovation in software development, using examples from organizations such as Amazon and HP. He will also discuss cultural and organizational issues, and provide a concise definition of devops.\nJez will begin by discussing the fundamentals of innovation, using the lean startup methodology. He will then tackle organizational barriers to innovation: traditional project management practices, silos between departments, and reporting structures. Good engineering practices are crucial to rapid delivery of high quality software, and so Jez will discuss the importance of continuous delivery to teams working on strategic software projects. Finally he will discuss how compliance and governance can be managed effectively while still delivering valuable software.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/125",
+    "session_id": "125",
+    "title": "\r\n\t\t\tAPI Client library V2\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Darrel Miller",
+    "description": "\r\n\t\t\tAPI Client library V2\r\n\t\t\r\nMany web APIs provide client libraries to help developers become productive as quickly as possible. Unfortunately, the common approach to the client library is to provide a procedural wrapper around the API. Often this negates any benefits of the loose coupling of the HTTP api because now the client developer is tightly coupled to the client library. Changes to the client library can become amaintenance headache.\nThis talk will demonstrate how to build client libraries that make your API just as easy to access without hiding it behind a procedural faÃ§ade. This approach will allow client devs thechance to upgrade to new versions of client libraries on their own schedule or take advantage of new features without waiting for you to release a new version of the client library. It also enables you to provide client developers with default response handling behaviors they can choose to use orreplace with their own. As an added benefit, this approach is highly compatible with the use of hypermedia so can ease the path when introducing hypermedia into your API.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/126",
+    "session_id": "126",
+    "title": "\r\n\t\t\tA good SharePoint development machine\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Sahil Malik",
+    "description": "\r\n\t\t\tA good SharePoint development machine\r\n\t\t\r\nYou&rsquo;re going to need it, if you dabble with SharePoint or want to take a dive. But you can get started without a huge investment in a hefty laptop. I work as a SharePoint developer, and over many years I have collected a bag of tricks that make my SharePoint life very productive. This session walks you through the various setups and tips and tricks I&rsquo;ve had to use to be a productive SharePoint developer. And yes I&rsquo;m jealous of your macbook.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/127",
+    "session_id": "127",
+    "title": "\r\n\t\t\tSemantics matter\r\n\t\t",
+    "timeslot": "04 December 2013 15:00 - 16:00",
+    "speaker": "Jon Skeet",
+    "description": "\r\n\t\t\tSemantics matter\r\n\t\t\r\nI've always been pedantic around things like terminology, but in the last few years I've become almost obsessed with the meaning of data - partly because I've seen how much trouble we get ourselves into when we use it inappropriately.\nIn this session I'll explore some examples (mostly from Stack Overflow) of where a failure to consider the meaning of data carefully enough has caused problems, see what a rich type system can do for you, and imagine what might happen if we actually went overboard on the idea. What's the sweet spot, and how can it be applied right now?\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/128",
+    "session_id": "128",
+    "title": "\r\n\t\t\tHerding Code Live - The Lightning Round\r\n\t\t",
+    "timeslot": "04 December 2013 16:20 - 17:20",
+    "speaker": null,
+    "description": "\r\n\t\t\tHerding Code Live - The Lightning Round\r\n\t\t\r\nJoin us for a live recording of Herding Code featuring a Lightning Round with some special guests and questions from our listeners.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/129",
+    "session_id": "129",
+    "title": "\r\n\t\t\tWindows Azure Essentials\r\n\t\t",
+    "timeslot": "04 December 2013 16:20 - 17:20",
+    "speaker": null,
+    "description": "\r\n\t\t\tWindows Azure Essentials\r\n\t\t\r\nWindows Azure is jam packed with features to choose from for building web applications and services that scale &ndash; but there are a core set of choices and features that are applicable to most scenarios. This session will get you up to speed on the essential features developers should be aware of, and how to apply them in practical scenarios. You&rsquo;ll learn how to choose between web sites and cloud services, and learn other practical tips for building Azure apps such as storing content, sending email, working with queues and choosing the right technology, and collecting important metrics for visibility into application health.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/130",
+    "session_id": "130",
+    "title": "\r\n\t\t\tTesting of Mobile Apps with Calabash and Xamarin Test Cloud\r\n\t\t",
+    "timeslot": "04 December 2013 16:20 - 17:20",
+    "speaker": "Karl Krukow",
+    "description": "\r\n\t\t\tTesting of Mobile Apps with Calabash and Xamarin Test Cloud\r\n\t\t\r\nThis talk serves as an introduction to the automated UI-testing technology Calabash and to Xamarin Test Cloud, a service that provides cloud-based access to hundreds of mobile devices for automated testing purposes. You'll learn about the benefits of automated UI testing on mobile apps, and see how easy it is to get started with UI testing using Calabash. Calabash is free, open-source and supports BDD (Behaviour Driven Developent) via the Cucumber tool.\nWhile Calabash is very useful on its own, its power is only fully realized when tests are run frequently on large sets of devices with different screen-sizes, resolutions and operating system versions. In a short live demo, you'll see how you can tap into this full potential with Xamarin Test Cloud.\nAfter attending this talk you'll have an understanding of why automated UI testing is useful, an understanding of Calabash and practical knowledge on how to use it. Last but not least, you'll get an overview of what Xamarin Test Cloud offers as a mobile cloud-testing service.\nNote: While this talk uses a Xamarin app as the sample project, Xamarin Test Cloud and Calabash supports all native and hybrid mobile apps independent of technology was used to build it. Hence, familiarity with Xamarin is not needed to attend this talk.\r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/131",
+    "session_id": "131",
+    "title": "\r\n\t\t\tAsynchrony in Node.js, let me count the\r\n\t\t",
+    "timeslot": "04 December 2013 16:20 - 17:20",
+    "speaker": "Glenn Block",
+    "description": "\r\n\t\t\tAsynchrony in Node.js, let me count the\r\n\t\t\r\nThe first thing you learn after hello world in node.js, is you will be writing A LOT of async code, you have no choice. The next thing you learn is there a zillion different ways to do it. The core platform gives you callbacks and events, but then there are a slew of add on approaches. Now with generators in ES6 we have even more options on the table. In this talk we&rsquo;ll look at common patterns and modules for async in node and guidelines or using them. \r\n"
+  },
+  {
+    "href": "{{ConferenceAPI_HostAddress}}/session/132",
+    "session_id": "132",
+    "title": "\r\n\t\t\tASP.NET and OWIN - Better Together\r\n\t\t",
+    "timeslot": "04 December 2013 16:20 - 17:20",
+    "speaker": "Daniel Roth",
+    "description": "\r\n\t\t\tASP.NET and OWIN - Better Together\r\n\t\t\r\nASP.NET now has first-class support for OWIN, the Open Web Interface for .NET. OWIN defines a standard interface between .NET web servers and web applications enabling OWIN based applications to run on any OWIN capable host. In this presentation you will learn the what and why of OWIN and how OWIN is now deeply integrated with the ASP.NET pipeline. You'll learn how you can easily host OWIN based components inside of ASP.NET or in your own process. I'll show you how you can take advantage of existing Microsoft OWIN components to handle security, diagnostics, servicing static content and running a variety of OWIN based frameworks. Lastly I will show you how you can create your own OWIN middleware and participate in the OWIN ecosystem\r\n"
+  }
+]

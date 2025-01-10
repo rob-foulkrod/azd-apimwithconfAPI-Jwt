@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceAPI", "ConferenceAPI\ConferenceAPI.csproj", "{E40D438A-8FC8-4AEE-BF97-F1E236CEB46C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40D438A-8FC8-4AEE-BF97-F1E236CEB46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40D438A-8FC8-4AEE-BF97-F1E236CEB46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40D438A-8FC8-4AEE-BF97-F1E236CEB46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40D438A-8FC8-4AEE-BF97-F1E236CEB46C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC13CA33-1B9D-4AE6-B8F0-1B541EF3C0CB}
+	EndGlobalSection
+EndGlobal

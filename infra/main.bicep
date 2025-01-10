@@ -11,6 +11,9 @@ param apimServiceName string = ''
 @description('Primary location for all resources')
 param location string
 
+@description('Id of the user or app to assign application roles')
+param principalId string
+
 // Tags that should be applied to all resources.
 // 
 // Note that 'azd-service-name' tags should be applied separately to service host resources.
@@ -29,6 +32,18 @@ resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   tags: tags
 }
 
+// deploy the conferenceAPI app first, as it is required for the APIM deployment
+module conferenceAPI 'conferenceAPI.bicep' = {
+  scope: rg
+  name: 'conferenceAPI'
+  params: {
+    location: location
+    tags: tags
+    principalId: principalId
+
+  }
+}
+
 module apim 'apimdeploy.bicep' = {
   name: 'apim'
   scope: rg
@@ -37,5 +52,10 @@ module apim 'apimdeploy.bicep' = {
     name: !empty(apimServiceName) ? apimServiceName : '${abbrs.apiManagementService}${resourceToken}'
     location: location
     tags: tags
+    WebAppURL: conferenceAPI.outputs.WebAppURL
   }
+
 }
+
+output AZURE_RESOURCE_CONFERENCE_API_URL string = conferenceAPI.outputs.WebAppURL
+

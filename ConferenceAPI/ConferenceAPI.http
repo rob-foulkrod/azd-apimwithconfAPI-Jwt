@@ -1,0 +1,6 @@
+@ConferenceAPI_HostAddress = http://localhost:5086
+
+GET {{ConferenceAPI_HostAddress}}/sessions/
+Accept: application/json
+
+###

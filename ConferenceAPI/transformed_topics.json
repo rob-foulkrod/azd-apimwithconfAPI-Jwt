@@ -1,0 +1,70 @@
+[
+    {
+        "topicid": "1",
+        "topicvalue": "Agile"
+    },
+    {
+        "topicid": "2",
+        "topicvalue": "Architecture"
+    },
+    {
+        "topicid": "3",
+        "topicvalue": "Cloud"
+    },
+    {
+        "topicid": "4",
+        "topicvalue": "Database"
+    },
+    {
+        "topicid": "5",
+        "topicvalue": "Design"
+    },
+    {
+        "topicid": "6",
+        "topicvalue": "Devops"
+    },
+    {
+        "topicid": "7",
+        "topicvalue": "Fun"
+    },
+    {
+        "topicid": "8",
+        "topicvalue": "Microsoft"
+    },
+    {
+        "topicid": "9",
+        "topicvalue": "Misc"
+    },
+    {
+        "topicid": "10",
+        "topicvalue": "Mobile"
+    },
+    {
+        "topicid": "11",
+        "topicvalue": "Programming Languages"
+    },
+    {
+        "topicid": "12",
+        "topicvalue": "Security"
+    },
+    {
+        "topicid": "13",
+        "topicvalue": "Techniques"
+    },
+    {
+        "topicid": "14",
+        "topicvalue": "Testing"
+    },
+    {
+        "topicid": "15",
+        "topicvalue": "Tools"
+    },
+    {
+        "topicid": "16",
+        "topicvalue": "UX"
+    },
+    {
+        "topicid": "17",
+        "topicvalue": "Web"
+    }
+]

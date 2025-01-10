@@ -1,0 +1,398 @@
+[
+    {
+        "speakerID": "1",
+        "name": "Scott Guthrie"
+    },
+    {
+        "speakerID": "2",
+        "name": "Don Syme"
+    },
+    {
+        "speakerID": "3",
+        "name": "James Lewis"
+    },
+    {
+        "speakerID": "4",
+        "name": "Jessie Shternshus"
+    },
+    {
+        "speakerID": "5",
+        "name": "Peter Bacon Darwin"
+    },
+    {
+        "speakerID": "6",
+        "name": "Jon Skeet"
+    },
+    {
+        "speakerID": "7",
+        "name": "Dominick Baier"
+    },
+    {
+        "speakerID": "8",
+        "name": "Craig Dunn"
+    },
+    {
+        "speakerID": "9",
+        "name": "Jez Humble"
+    },
+    {
+        "speakerID": "10",
+        "name": "Axel Rauschmayer"
+    },
+    {
+        "speakerID": "11",
+        "name": "Phillip Trelford"
+    },
+    {
+        "speakerID": "12",
+        "name": "Mike Cohn"
+    },
+    {
+        "speakerID": "13",
+        "name": "Robert C. Martin"
+    },
+    {
+        "speakerID": "14",
+        "name": "Jafar Husain"
+    },
+    {
+        "speakerID": "15",
+        "name": "Jessica Kerr"
+    },
+    {
+        "speakerID": "16",
+        "name": "Scott Allen"
+    },
+    {
+        "speakerID": "17",
+        "name": "Sahil Malik"
+    },
+    {
+        "speakerID": "18",
+        "name": "David Fowler"
+    },
+    {
+        "speakerID": "19",
+        "name": "Dan North"
+    },
+    {
+        "speakerID": "20",
+        "name": "Ashe Dryden"
+    },
+    {
+        "speakerID": "21",
+        "name": "Jon Galloway"
+    },
+    {
+        "speakerID": "22",
+        "name": "John Azariah"
+    },
+    {
+        "speakerID": "23",
+        "name": "Damian Edwards"
+    },
+    {
+        "speakerID": "24",
+        "name": "Michele Bustamante"
+    },
+    {
+        "speakerID": "25",
+        "name": "Venkat Subramaniam"
+    },
+    {
+        "speakerID": "26",
+        "name": "Marit Rossnes"
+    },
+    {
+        "speakerID": "27",
+        "name": "Mads Torgersen"
+    },
+    {
+        "speakerID": "28",
+        "name": "Nicole Herskowitz"
+    },
+    {
+        "speakerID": "29",
+        "name": "Gill Cleeren"
+    },
+    {
+        "speakerID": "30",
+        "name": "Gary Bernhardt"
+    },
+    {
+        "speakerID": "31",
+        "name": "Mathew McLoughlin"
+    },
+    {
+        "speakerID": "32",
+        "name": "David Carmona"
+    },
+    {
+        "speakerID": "33",
+        "name": "Juval Lowy"
+    },
+    {
+        "speakerID": "34",
+        "name": "Louis Dejardin"
+    },
+    {
+        "speakerID": "35",
+        "name": "Stuart Lodge"
+    },
+    {
+        "speakerID": "36",
+        "name": "Colin Beales"
+    },
+    {
+        "speakerID": "37",
+        "name": "Pedro F\u00e9lix"
+    },
+    {
+        "speakerID": "38",
+        "name": "Tiberiu Covaci"
+    },
+    {
+        "speakerID": "39",
+        "name": "Gary Short"
+    },
+    {
+        "speakerID": "40",
+        "name": "Damian Hickey"
+    },
+    {
+        "speakerID": "41",
+        "name": "Burke Holland"
+    },
+    {
+        "speakerID": "42",
+        "name": "Mark Rendle"
+    },
+    {
+        "speakerID": "43",
+        "name": "Miguel Castro"
+    },
+    {
+        "speakerID": "44",
+        "name": "Tomas Petricek"
+    },
+    {
+        "speakerID": "45",
+        "name": "Geoff Watts"
+    },
+    {
+        "speakerID": "46",
+        "name": "Brian A. Randell"
+    },
+    {
+        "speakerID": "47",
+        "name": "Erlend Oftedal"
+    },
+    {
+        "speakerID": "48",
+        "name": "James Hughes"
+    },
+    {
+        "speakerID": "49",
+        "name": "Tomas Jansson"
+    },
+    {
+        "speakerID": "50",
+        "name": "G\u00e1sp\u00e1r Nagy"
+    },
+    {
+        "speakerID": "51",
+        "name": "Andy Clymer"
+    },
+    {
+        "speakerID": "52",
+        "name": "Carl Franklin"
+    },
+    {
+        "speakerID": "53",
+        "name": "Richard Campbell"
+    },
+    {
+        "speakerID": "54",
+        "name": "Paul Stack"
+    },
+    {
+        "speakerID": "55",
+        "name": "Marcin Floryan"
+    },
+    {
+        "speakerID": "56",
+        "name": "Enrico Campidoglio"
+    },
+    {
+        "speakerID": "57",
+        "name": "Justin Rusbatch"
+    },
+    {
+        "speakerID": "58",
+        "name": "Matt Ellis"
+    },
+    {
+        "speakerID": "59",
+        "name": "Christian Weyer"
+    },
+    {
+        "speakerID": "60",
+        "name": "JP Toto"
+    },
+    {
+        "speakerID": "61",
+        "name": "Mahesh Krishnan"
+    },
+    {
+        "speakerID": "62",
+        "name": "Ashic Mahtab"
+    },
+    {
+        "speakerID": "63",
+        "name": "Scott Wlaschin"
+    },
+    {
+        "speakerID": "64",
+        "name": "Laurent Bugnion"
+    },
+    {
+        "speakerID": "65",
+        "name": "Tim G. Thomas"
+    },
+    {
+        "speakerID": "66",
+        "name": "Richard Astbury"
+    },
+    {
+        "speakerID": "67",
+        "name": "Hubert Matthews"
+    },
+    {
+        "speakerID": "68",
+        "name": "Dror Helper"
+    },
+    {
+        "speakerID": "69",
+        "name": "Simon Brown"
+    },
+    {
+        "speakerID": "70",
+        "name": "Russ Miles"
+    },
+    {
+        "speakerID": "71",
+        "name": "Christian Hassa"
+    },
+    {
+        "speakerID": "72",
+        "name": "Christian Wenz"
+    },
+    {
+        "speakerID": "73",
+        "name": "Mike Taulty"
+    },
+    {
+        "speakerID": "74",
+        "name": "Andy Wigley"
+    },
+    {
+        "speakerID": "75",
+        "name": "Martin Beeby"
+    },
+    {
+        "speakerID": "76",
+        "name": "Mark Seemann"
+    },
+    {
+        "speakerID": "77",
+        "name": "Ben Hall"
+    },
+    {
+        "speakerID": "78",
+        "name": "Bj\u00f8rn Einar Bjartnes"
+    },
+    {
+        "speakerID": "79",
+        "name": "Brandon Satrom"
+    },
+    {
+        "speakerID": "80",
+        "name": "Jeremy D. Miller"
+    },
+    {
+        "speakerID": "81",
+        "name": "Simon Elliston Ball"
+    },
+    {
+        "speakerID": "82",
+        "name": "Einar H\u00f8st"
+    },
+    {
+        "speakerID": "83",
+        "name": "Jonas Winje"
+    },
+    {
+        "speakerID": "84",
+        "name": "Steve Sanderson"
+    },
+    {
+        "speakerID": "85",
+        "name": "Richard Garside"
+    },
+    {
+        "speakerID": "86",
+        "name": "Bryan Hunter"
+    },
+    {
+        "speakerID": "87",
+        "name": "Paul Betts"
+    },
+    {
+        "speakerID": "88",
+        "name": "Glenn Block"
+    },
+    {
+        "speakerID": "89",
+        "name": "Brock Allen"
+    },
+    {
+        "speakerID": "90",
+        "name": "Rob Ashton"
+    },
+    {
+        "speakerID": "91",
+        "name": "Liam Westley"
+    },
+    {
+        "speakerID": "92",
+        "name": "Gael Fraiteur"
+    },
+    {
+        "speakerID": "93",
+        "name": "Matthew Podwysocki"
+    },
+    {
+        "speakerID": "94",
+        "name": "Daniel Roth"
+    },
+    {
+        "speakerID": "95",
+        "name": "Darrel Miller"
+    },
+    {
+        "speakerID": "96",
+        "name": "Gojko Adzic"
+    },
+    {
+        "speakerID": "97",
+        "name": "Ingo Rammer"
+    },
+    {
+        "speakerID": "98",
+        "name": "Jon McCoy"
+    },
+    {
+        "speakerID": "99",
+        "name": "Karl Krukow"
+    }
+]

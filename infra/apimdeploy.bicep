@@ -3,6 +3,16 @@ param location string = resourceGroup().location
 param tags object = {}
 param name string
 
+param WebAppURL string
+
+
+
+var abbrs = loadJsonContent('./abbreviations.json')
+var resourceToken = uniqueString(subscription().id, resourceGroup().id, location)
+
+// create a variable, referring to the output value from the main.bicep file
+
+
 
 resource apimService 'Microsoft.ApiManagement/service@2023-03-01-preview' = {
   name: name
@@ -42,7 +52,7 @@ resource apimServiceName_demo_conference_api 'Microsoft.ApiManagement/service/ap
     apiRevision: '1'
     description: 'A sample API with information related to a technical conference.  The available resources  include *Speakers*, *Sessions* and *Topics*.  A single write operation is available to provide  feedback on a session.'
     subscriptionRequired: true
-    serviceUrl: 'https://bigconference.azurewebsites.net'
+    serviceUrl: WebAppURL
     protocols: [
       'http'
       'https'
@@ -143,9 +153,7 @@ resource apimServiceName_demo_conference_api_GetSession 'Microsoft.ApiManagement
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
 resource apimServiceName_demo_conference_api_GetSessions 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
@@ -192,44 +200,7 @@ resource apimServiceName_demo_conference_api_GetSessions 'Microsoft.ApiManagemen
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
-}
 
-resource apimServiceName_demo_conference_api_GetSessionTopics 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
-  parent: apimServiceName_demo_conference_api
-  name: 'GetSessionTopics'
-  properties: {
-    displayName: 'GetSessionTopics'
-    method: 'GET'
-    urlTemplate: '/session/{id}/topics'
-    templateParameters: [
-      {
-        name: 'id'
-        description: 'Format - int32.'
-        type: 'integer'
-        required: true
-        values: []
-      }
-    ]
-    description: 'A list of topics covered by a particular session'
-    responses: [
-      {
-        statusCode: 200
-        description: 'OK'
-        representations: [
-          {
-            contentType: 'application/vnd.collection+json'
-          }
-        ]
-        headers: []
-      }
-    ]
-  }
-  dependsOn: [
-    apimService
-  ]
 }
 
 resource apimServiceName_demo_conference_api_GetSpeaker 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
@@ -264,9 +235,7 @@ resource apimServiceName_demo_conference_api_GetSpeaker 'Microsoft.ApiManagement
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
 resource apimServiceName_demo_conference_api_GetSpeakers 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
@@ -307,78 +276,10 @@ resource apimServiceName_demo_conference_api_GetSpeakers 'Microsoft.ApiManagemen
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
-resource apimServiceName_demo_conference_api_GetSpeakerSessions 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
-  parent: apimServiceName_demo_conference_api
-  name: 'GetSpeakerSessions'
-  properties: {
-    displayName: 'GetSpeakerSessions'
-    method: 'GET'
-    urlTemplate: '/speaker/{id}/sessions'
-    templateParameters: [
-      {
-        name: 'id'
-        description: 'Format - int32.'
-        type: 'integer'
-        required: true
-        values: []
-      }
-    ]
-    responses: [
-      {
-        statusCode: 200
-        description: 'OK'
-        representations: [
-          {
-            contentType: 'application/vnd.collection+json'
-          }
-        ]
-        headers: []
-      }
-    ]
-  }
-  dependsOn: [
-    apimService
-  ]
-}
 
-resource apimServiceName_demo_conference_api_GetSpeakerTopics 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
-  parent: apimServiceName_demo_conference_api
-  name: 'GetSpeakerTopics'
-  properties: {
-    displayName: 'GetSpeakerTopics'
-    method: 'GET'
-    urlTemplate: '/speaker/{id}/topics'
-    templateParameters: [
-      {
-        name: 'id'
-        description: 'Format - int32.'
-        type: 'integer'
-        required: true
-        values: []
-      }
-    ]
-    responses: [
-      {
-        statusCode: 200
-        description: 'OK'
-        representations: [
-          {
-            contentType: 'application/vnd.collection+json'
-          }
-        ]
-        headers: []
-      }
-    ]
-  }
-  dependsOn: [
-    apimService
-  ]
-}
 
 resource apimServiceName_demo_conference_api_GetTopic 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
   parent: apimServiceName_demo_conference_api
@@ -409,9 +310,7 @@ resource apimServiceName_demo_conference_api_GetTopic 'Microsoft.ApiManagement/s
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
 resource apimServiceName_demo_conference_api_GetTopics 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
@@ -447,78 +346,9 @@ resource apimServiceName_demo_conference_api_GetTopics 'Microsoft.ApiManagement/
       }
     ]
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
-resource apimServiceName_demo_conference_api_GetTopicSessions 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
-  parent: apimServiceName_demo_conference_api
-  name: 'GetTopicSessions'
-  properties: {
-    displayName: 'GetTopicSessions'
-    method: 'GET'
-    urlTemplate: '/topic/{id}/sessions'
-    templateParameters: [
-      {
-        name: 'id'
-        description: 'Format - int32.'
-        type: 'integer'
-        required: true
-        values: []
-      }
-    ]
-    responses: [
-      {
-        statusCode: 200
-        description: 'OK'
-        representations: [
-          {
-            contentType: 'application/vnd.collection+json'
-          }
-        ]
-        headers: []
-      }
-    ]
-  }
-  dependsOn: [
-    apimService
-  ]
-}
-
-resource apimServiceName_demo_conference_api_GetTopicSpeakers 'Microsoft.ApiManagement/service/apis/operations@2023-03-01-preview' = {
-  parent: apimServiceName_demo_conference_api
-  name: 'GetTopicSpeakers'
-  properties: {
-    displayName: 'GetTopicSpeakers'
-    method: 'GET'
-    urlTemplate: '/topic/{id}/speakers'
-    templateParameters: [
-      {
-        name: 'id'
-        description: 'Format - int32.'
-        type: 'integer'
-        required: true
-        values: []
-      }
-    ]
-    responses: [
-      {
-        statusCode: 200
-        description: 'OK'
-        representations: [
-          {
-            contentType: 'application/vnd.collection+json'
-          }
-        ]
-        headers: []
-      }
-    ]
-  }
-  dependsOn: [
-    apimService
-  ]
-}
 
 resource apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/service/apis/schemas@2023-03-01-preview' = {
   parent: apimServiceName_demo_conference_api
@@ -527,9 +357,7 @@ resource apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/se
     contentType: 'application/vnd.ms-azure-apim.swagger.definitions+json'
     document: {}
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
 resource Microsoft_ApiManagement_service_apis_wikis_apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/service/apis/wikis@2023-03-01-preview' = {
@@ -538,9 +366,7 @@ resource Microsoft_ApiManagement_service_apis_wikis_apimServiceName_demo_confere
   properties: {
     documents: []
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
 
 resource apimServiceName_demo_conference_api_GetSpeakers_policy 'Microsoft.ApiManagement/service/apis/operations/policies@2023-03-01-preview' = {
@@ -550,10 +376,7 @@ resource apimServiceName_demo_conference_api_GetSpeakers_policy 'Microsoft.ApiMa
     value: '<!--\r\n    IMPORTANT:\r\n    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.\r\n    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.\r\n    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.\r\n    - To add a policy, place the cursor at the desired insertion point and select a policy from the sidebar.\r\n    - To remove a policy, delete the corresponding policy statement from the policy document.\r\n    - Position the <base> element within a section element to inherit all policies from the corresponding section element in the enclosing scope.\r\n    - Remove the <base> element to prevent inheriting policies from the corresponding section element in the enclosing scope.\r\n    - Policies are applied in the order of their appearance, from the top down.\r\n    - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.\r\n-->\r\n<policies>\r\n  <inbound>\r\n    <base />\r\n    <rate-limit-by-key calls="5" renewal-period="20" counter-key="@(context.Subscription?.Key ?? &quot;anonymous&quot;)" />\r\n  </inbound>\r\n  <backend>\r\n    <base />\r\n  </backend>\r\n  <outbound>\r\n    <base />\r\n    <set-header name="X-Powered-By" exists-action="delete" />\r\n    <set-header name="X-AspNet-Version" exists-action="delete" />\r\n  </outbound>\r\n  <on-error>\r\n    <base />\r\n  </on-error>\r\n</policies>'
     format: 'xml'
   }
-  dependsOn: [
-    apimServiceName_demo_conference_api
-    apimService
-  ]
+
 }
 
 resource apimServiceName_mtt_custom_default 'Microsoft.ApiManagement/service/products/apiLinks@2023-03-01-preview' = {
@@ -562,7 +385,5 @@ resource apimServiceName_mtt_custom_default 'Microsoft.ApiManagement/service/pro
   properties: {
     apiId: apimServiceName_demo_conference_api.id
   }
-  dependsOn: [
-    apimService
-  ]
+
 }
