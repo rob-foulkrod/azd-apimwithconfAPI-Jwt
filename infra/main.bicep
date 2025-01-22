@@ -14,6 +14,14 @@ param location string
 @description('Id of the user or app to assign application roles')
 param principalId string
 
+@description('The SKU of the APIM instance')
+@allowed([
+  'Developer'
+  'Consumption'
+  'Standard'
+])
+param apimSku string
+
 // Tags that should be applied to all resources.
 // 
 // Note that 'azd-service-name' tags should be applied separately to service host resources.
@@ -52,6 +60,7 @@ module apim 'apimdeploy.bicep' = {
     name: !empty(apimServiceName) ? apimServiceName : '${abbrs.apiManagementService}${resourceToken}'
     location: location
     tags: tags
+    apimSku: apimSku
     WebAppURL: conferenceAPI.outputs.WebAppURL
   }
 
