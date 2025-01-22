@@ -5,21 +5,31 @@ param name string
 
 param WebAppURL string
 
+@description('The SKU of the APIM instance')
+@allowed([
+  'Developer'
+  'Consumption'
+  'Standard'
+])
+param apimSku string
 
 
 var abbrs = loadJsonContent('./abbreviations.json')
 var resourceToken = uniqueString(subscription().id, resourceGroup().id, location)
 
-// create a variable, referring to the output value from the main.bicep file
+// disable the developer portal for consumption SKUs
+// the property is invalid for consumption SKUs, so setting to null
+var developerPortalStatus = apimSku == 'Consumption' ? null : 'Enabled'
 
-
+// capacity is is required to be 0 for consumption SKUs
+var capacity = apimSku == 'Consumption' ? 0 : 1
 
 resource apimService 'Microsoft.ApiManagement/service@2023-03-01-preview' = {
   name: name
   location: resourceGroup().location
   sku: {
-    name: 'Standard'
-    capacity: 1
+    name: apimSku
+    capacity: capacity
   }
   properties: {
     publisherEmail: 'petender@mttdemoworld.onmicrosoft.com'
@@ -40,7 +50,7 @@ resource apimService 'Microsoft.ApiManagement/service@2023-03-01-preview' = {
     apiVersionConstraint: {}
     publicNetworkAccess: 'Enabled'
     legacyPortalStatus: 'Enabled'
-    developerPortalStatus: 'Enabled'
+    developerPortalStatus: developerPortalStatus
   }
 }
 
@@ -360,7 +370,7 @@ resource apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/se
 
 }
 
-resource Microsoft_ApiManagement_service_apis_wikis_apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/service/apis/wikis@2023-03-01-preview' = {
+resource Microsoft_ApiManagement_service_apis_wikis_apimServiceName_demo_conference_api_default 'Microsoft.ApiManagement/service/apis/wikis@2023-03-01-preview'  = if (apimSku != 'Consumption') {
   parent: apimServiceName_demo_conference_api
   name: 'default'
   properties: {
@@ -369,15 +379,56 @@ resource Microsoft_ApiManagement_service_apis_wikis_apimServiceName_demo_confere
 
 }
 
-resource apimServiceName_demo_conference_api_GetSpeakers_policy 'Microsoft.ApiManagement/service/apis/operations/policies@2023-03-01-preview' = {
+// in the consumption plans, the rate limiting policy must be applied at the api level
+// in the standard and developer plans, the rate limiting policy can be applied at the operation level
+
+var policyPart1 = '''<!--    IMPORTANT:
+    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
+    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.
+    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.
+    - To add a policy, place the cursor at the desired insertion point and select a policy from the sidebar.
+    - To remove a policy, delete the corresponding policy statement from the policy document.
+    - Position the <base> element within a section element to inherit all policies from the corresponding section element in the enclosing scope.
+    - Remove the <base> element to prevent inheriting policies from the corresponding section element in the enclosing scope.
+    - Policies are applied in the order of their appearance, from the top down.
+    - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
+-->
+<policies>
+  <inbound>
+    <base />'''
+
+/// conditionally add the rate limiting policy based on the SKU. It is not allowed in the consumption SKU
+/// and string interpolation is not supported in multi-line strings in bicep yet
+var rateLimitPolicy = apimSku == 'Consumption' ? '' : '''<rate-limit-by-key calls="5" renewal-period="20" counter-key="@(context.Subscription?.Key ?? &quot;anonymous&quot;)" />''' 
+
+var policyPart2 = '''
+  </inbound>
+  <backend>
+    <base />
+  </backend>
+  <outbound>
+    <base />
+    <set-header name="X-Powered-By" exists-action="delete" />
+    <set-header name="X-AspNet-Version" exists-action="delete" />
+  </outbound>
+  <on-error>
+    <base />
+  </on-error>
+</policies>'''
+
+var policyComplete = '${policyPart1}\n${rateLimitPolicy}\n${policyPart2}'
+
+resource apimServiceName_demo_conference_api_GetSpeakers_policy 'Microsoft.ApiManagement/service/apis/operations/policies@2023-03-01-preview' =  {
   parent: apimServiceName_demo_conference_api_GetSpeakers
   name: 'policy'
   properties: {
-    value: '<!--\r\n    IMPORTANT:\r\n    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.\r\n    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.\r\n    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.\r\n    - To add a policy, place the cursor at the desired insertion point and select a policy from the sidebar.\r\n    - To remove a policy, delete the corresponding policy statement from the policy document.\r\n    - Position the <base> element within a section element to inherit all policies from the corresponding section element in the enclosing scope.\r\n    - Remove the <base> element to prevent inheriting policies from the corresponding section element in the enclosing scope.\r\n    - Policies are applied in the order of their appearance, from the top down.\r\n    - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.\r\n-->\r\n<policies>\r\n  <inbound>\r\n    <base />\r\n    <rate-limit-by-key calls="5" renewal-period="20" counter-key="@(context.Subscription?.Key ?? &quot;anonymous&quot;)" />\r\n  </inbound>\r\n  <backend>\r\n    <base />\r\n  </backend>\r\n  <outbound>\r\n    <base />\r\n    <set-header name="X-Powered-By" exists-action="delete" />\r\n    <set-header name="X-AspNet-Version" exists-action="delete" />\r\n  </outbound>\r\n  <on-error>\r\n    <base />\r\n  </on-error>\r\n</policies>'
+    value: policyComplete
     format: 'xml'
   }
 
 }
+
+
 
 resource apimServiceName_mtt_custom_default 'Microsoft.ApiManagement/service/products/apiLinks@2023-03-01-preview' = {
   parent: apimServiceName_mtt_custom
