@@ -49,13 +49,13 @@ This scenario deploys the sample **Conference Demo API** as a running **Azure AP
 * %youralias%demoapim - Azure API Management Resource
 * MTT Demo Conference API - published API, connecting to the sample https://conferenceapi.azurewebsites.net 
 
-<img src="./APIM/ResourceGroup_Overview.png" alt="APIM Resource Group" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/ResourceGroup_Overview.png" alt="APIM Resource Group" style="width:70%;">
 <br></br>
 
-<img src="./APIM/demoapi_overview.png" alt="Demo API Management Service" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/demoapi_overview.png" alt="Demo API Management Service" style="width:70%;">
 <br></br>
 
-<img src="./APIM/conference_demo_api.png" alt="Conference Demo API" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/conference_demo_api.png" alt="Conference Demo API" style="width:70%;">
 <br></br>
 
 ### 2. What can I demo from this scenario after deployment
@@ -73,25 +73,25 @@ This scenario deploys the sample **Conference Demo API** as a running **Azure AP
 - Echo API: sample API which returns basic information when connecting to it.
 - MTT Demo Conference API: simulates a published API with different API endpoints for pulling up Conference information such as speaker(s), session(s),... this is the main API to use in the demo scenarios below. 
 
-<img src="./APIM/published_APIs.png" alt="2 Published APIs for demos" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/published_APIs.png" alt="2 Published APIs for demos" style="width:70%;">
 <br></br>
 
 4. Navigate to **MTT Demo Conference API**
 5. From the **Design** tab, notice the different API operations available (GetSession(s), GetSpeaker(s), GetTopic(s))
 
-<img src="./APIM/API_operations.png" alt="API Operations" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/API_operations.png" alt="API Operations" style="width:70%;">
 <br></br>
 
 6. Navigate to the **Test** tab
 7. Select the **GetSessions** API 
 
-<img src="./APIM/Get_sessions.png" alt="GetSessions API Operation" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Sessions.png" alt="GetSessions API Operation" style="width:70%;">
 <br></br>
 
 8. Press the **Send** button
 9. Scroll down in the body section to HTTP Response, and show the **JSON** output from the Get Operation
 
-<img src="./APIM/Get_sessions_HTTPResponse.png" alt="GetSessions API Operation HTTP Response" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Sessions_HTTPResponse.png" alt="GetSessions API Operation HTTP Response" style="width:70%;">
 <br></br>
 
 ### API Management Inbound and Outbound Processing Policies
@@ -101,19 +101,19 @@ This scenario deploys the sample **Conference Demo API** as a running **Azure AP
 
 and hightlight this could be a security risk (you are telling what platform the API is running in the backend, which could be targeted for vulnerabilities now)
 
-<img src="./APIM/Get_sessions_Headers.png" alt="GetSessions API Operation Header" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Sessions_Headers.png" alt="GetSessions API Operation Header" style="width:70%;">
 <br></br>
 
 2. The **solution** for the security risk, is using **APIM Outbound Processing Policies**, which is configured for the **GetSpeakers** API. 
 
 3. Navigate to the **GetSpeakers** API, and zoom in on the **Outbound Processing**. Notice the **set-header** policy items.
 
-<img src="./APIM/Get_Speakers_Outbound.png" alt="GetSpeakers Outbound Processing" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_Outbound.png" alt="GetSpeakers Outbound Processing" style="width:70%;">
 <br></br>
 
 4. **Click** the **set-header** policy. This opens the XML-details of the Outbound Processing Policy for this API
 
-<img src="./APIM/Get_Speakers_Outbound_Policy.png" alt="GetSpeakers Outbound Processing Policy" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_Outbound_Policy.png" alt="GetSpeakers Outbound Processing Policy" style="width:70%;">
 <br></br>
 
 5. Another common use case for API Gateways, is **limiting the number of requests** an API should/can handle. This can be managed using **Inbound Policies**. 
@@ -121,22 +121,22 @@ and hightlight this could be a security risk (you are telling what platform the 
 6. From the **GetSpeakers** API, zoom in on the **Inbound Processing** from the **Design** tab.
 7. Notice the **rate-limit-by-key** policy setting. Click the **...** next to it. Select **Form-based Editor**.
 
-<img src="./APIM/Get_Speakers_Policy_formeditor.png" alt="GetSpeakers Inbound Processing Policy" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_Policy_formeditor.png" alt="GetSpeakers Inbound Processing Policy" style="width:70%;">
 <br></br>
 
 8. This allows you to define Policy settings using the Graphical editor, instead of the XML syntax
 
-<img src="./APIM/Get_Speakers_Policy_formeditor_details.png" alt="GetSpeakers Inbound Processing Policy" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_Policy_formeditor_details.png" alt="GetSpeakers Inbound Processing Policy" style="width:70%;">
 <br></br>
 
 9. To simulate the **rate limits**, navigate back to **GetSpeakers**, and select the **Test** tab; Press the **Send** button to retrieve the JSON response for this API.
 
-<img src="./APIM/Get_Speakers_Response.png" alt="GetSpeakers JSON Response" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_Response.png" alt="GetSpeakers JSON Response" style="width:70%;">
 <br></br>
 
 10. **Repeat** this process by clicking the **Send** button more than 5 times within 20 seconds. this will result in a **Rate Limit Exceeded** Response
 
-<img src="./APIM/Get_Speakers_TooManyRequests.png" alt="GetSpeakers Rate Limit Exceeded" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Get_Speakers_TooManyRequests.png" alt="GetSpeakers Rate Limit Exceeded" style="width:70%;">
 <br></br>
 
 11. After the time limit has passed, pressing **Send** again, will provide the expected JSON response with Speaker details.
@@ -146,21 +146,21 @@ and hightlight this could be a security risk (you are telling what platform the 
 
 2. From the API Management Blade, navigate to **Products**. 
 
-<img src="./APIM/Products.png" alt="API Management Products" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Products.png" alt="API Management Products" style="width:70%;">
 <br></br>
 
 3. Notice the **mtt_custom** Product currently only allows **Administrators** to use it. This is perfect for testing by your developers, before publicly exposing the actual API endpoints. 
 
 4. Open the **mtt_custom** Product by clicking on its name. this opens the Product blade.
 
-<img src="./APIM/Products_details.png" alt="API Management Products details" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Products_details.png" alt="API Management Products details" style="width:70%;">
 <br></br>
 
 5. Select **APIs**, which shows more details about which API is linked to this Product. 
 
 6. Select **Subscriptions**, which shows the API Primary and Secondary key your developers would use in order to interact with this Product.  
 
-<img src="./APIM/Products_Subscriptions.png" alt="API Management Products Subscriptions details" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Products_Subscriptions.png" alt="API Management Products Subscriptions details" style="width:70%;">
 <br></br>
 
 ### API Management Developer Portal
@@ -168,27 +168,27 @@ API Management provides a Developer Portal as part of the SKUs, which allows you
 
 1. From the **API Management Resource** Blade, navigate to **Developer Portal**
 
-<img src="./APIM/Developer_Portal.png" alt="API Management Developer Portal" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Developer_Portal.png" alt="API Management Developer Portal" style="width:70%;">
 <br></br>
 
 2. This opens a **fully-customizable HTML Portal**, which can be extended with **Widgets, API Documentation, Access Permissions** and much more.
 
-<img src="./APIM/Developer_Portal_HomePage.png" alt="API Management Developer Portal" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Developer_Portal_HomePage.png" alt="API Management Developer Portal" style="width:70%;">
 <br></br>
 
 3. **Navigate** through the **Navigation** object, quickly describing what the different customization options are about (e.g. Layout, Styles,...)
 
-<img src="./APIM/Developer_Portal_Navigation.png" alt="API Management Developer Portal Navigation" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Developer_Portal_Navigation.png" alt="API Management Developer Portal Navigation" style="width:70%;">
 <br></br>
 
 4. **Navigate** to the **Upper Left Menu** of the Developer Portal, and select **API**, using **Ctrl- or the Apple Key** to open the **Hyperlink** (or navigate to **https://<Developer Portal URL>/apis**)
 
-<img src="./APIM/Developer_Portal_API.png" alt="API Management Developer Portal Published API" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Developer_Portal_API.png" alt="API Management Developer Portal Published API" style="width:70%;">
 <br></br>
 
 5. Select the **MTT Conference Demo API** Hyperlink, and open it by using the **Ctrl- or the Apple Key** (or navigate to **https://<Developer Portal URL>/api-details#api=demo-conference-api**)
 
-<img src="./APIM/Developer_Portal_API_details.png" alt="API Management Developer Portal Published API" style="width:70%;">
+<img src="https://github.com/petender/azd-apimwithconfAPI/blob/b3b77189492c9c5da5b4879f1b73b08d329e4360/demoguide/APIM/Developer_Portal_API_details.png" alt="API Management Developer Portal Published API" style="width:70%;">
 <br></br>
 
 This will allow developers/customers to find out which API Operations are available, what Request Parameters to use and what Response information to expect.
