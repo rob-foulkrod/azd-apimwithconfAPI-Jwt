@@ -137,7 +137,7 @@ app.MapGet("/speakers", () =>
 app.MapGet("/speaker/{id}", (string speakerID) =>
 {
     var speakers = ReadSpeakersFromFile("transformed_speakers.json");
-    return speakers.Find(sp => sp.speakerID == speakerID);
+    return speakers.Find(sp => sp.speakerID == id);
 });
 
 app.MapGet("/topics", () =>
