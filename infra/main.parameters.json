@@ -1,6 +1,6 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
+    "contentVersion": "1.0.0.0",    
     "parameters": {
       "environmentName": {
         "value": "${AZURE_ENV_NAME}"
@@ -10,6 +10,30 @@
       },      
       "principalId": {
         "value": "${AZURE_PRINCIPAL_ID}"
-    }
+      },      
+      "tenantId": {
+        "value": "${CONF_REG_TENANTID}",
+        "metadata": {
+          "description": "The Azure AD tenant ID for token validation",
+          "required": false,
+          "defaultValue": ""
+        }
+      },
+      "audience": {
+        "value": "${CONF_REG_AUD}",
+        "metadata": {
+          "description": "The audience (client ID) for Azure AD token validation",
+          "required": false,
+          "defaultValue": ""
+        }
+      },
+      "scope": {
+        "value": "${CONF_REG_SCOPE}",
+        "metadata": {
+          "description": "The OAuth2 scope required for Azure AD token validation",
+          "required": false,
+          "defaultValue": "API.Invoke"
+        }
+      }
     }
 }

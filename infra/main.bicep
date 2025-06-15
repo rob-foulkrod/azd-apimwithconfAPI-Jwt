@@ -14,6 +14,15 @@ param location string
 @description('Id of the user or app to assign application roles')
 param principalId string
 
+@description('The tenant ID for Azure AD token validation')
+param tenantId string
+
+@description('The audience for Azure AD token validation')
+param audience string
+
+@description('The scope for Azure AD token validation')
+param scope string
+
 @description('The SKU of the APIM instance')
 @allowed([
   'Developer'
@@ -62,6 +71,9 @@ module apim 'apimdeploy.bicep' = {
     tags: tags
     apimSku: apimSku
     WebAppURL: conferenceAPI.outputs.WebAppURL
+    tenantId: tenantId
+    audience: audience
+    scope: scope
   }
 
 }

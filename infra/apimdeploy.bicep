@@ -2,6 +2,9 @@ param apimServiceName string = ''
 param location string = resourceGroup().location
 param tags object = {}
 param name string
+param tenantId string
+param audience string
+param scope string
 
 param WebAppURL string
 
@@ -27,6 +30,7 @@ var capacity = apimSku == 'Consumption' ? 0 : 1
 resource apimService 'Microsoft.ApiManagement/service@2023-03-01-preview' = {
   name: name
   location: resourceGroup().location
+  tags: tags
   sku: {
     name: apimSku
     capacity: capacity
@@ -401,6 +405,9 @@ var policyPart1 = '''<!--    IMPORTANT:
 /// and string interpolation is not supported in multi-line strings in bicep yet
 var rateLimitPolicy = apimSku == 'Consumption' ? '' : '''<rate-limit-by-key calls="5" renewal-period="20" counter-key="@(context.Subscription?.Key ?? &quot;anonymous&quot;)" />''' 
 
+// Azure AD token validation policy - using string interpolation
+var jwtValidationPolicy = '<validate-azure-ad-token tenant-id="${tenantId}">\n    <audiences>\n        <audience>${audience}</audience>\n    </audiences>\n    <required-claims>\n        <claim name="scp" match="any">\n            <value>${scope}</value>\n        </claim>\n    </required-claims>\n</validate-azure-ad-token>'
+
 var policyPart2 = '''
   </inbound>
   <backend>
@@ -416,7 +423,7 @@ var policyPart2 = '''
   </on-error>
 </policies>'''
 
-var policyComplete = '${policyPart1}\n${rateLimitPolicy}\n${policyPart2}'
+var policyComplete = '${policyPart1}\n${jwtValidationPolicy}\n${rateLimitPolicy}\n${policyPart2}'
 
 resource apimServiceName_demo_conference_api_GetSpeakers_policy 'Microsoft.ApiManagement/service/apis/operations/policies@2023-03-01-preview' =  {
   parent: apimServiceName_demo_conference_api_GetSpeakers

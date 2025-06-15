@@ -1,8 +1,21 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
 
-name: tdd-azdapimpwithconfAPI
+name: tdd-azdapimpwithconfAPI-jwt
 metadata:
-    template: tdd-azdapimpwithconfAPI@1.11.0
+    template: tdd-azdapimpwithconfAPI-jwt@0.0.1
+
+hooks:
+  preup:
+    windows:
+      shell: pwsh
+      run: .\infra\scripts\pre.ps1
+      interactive: true
+  postdown:
+    windows:
+      shell: pwsh
+      run: .\infra\scripts\post.ps1
+      interactive: true
+
 infra:
    provider: "bicep"
    
@@ -11,3 +24,4 @@ services:
         project: ConferenceAPI
         host: appservice
         language: dotnet
+
