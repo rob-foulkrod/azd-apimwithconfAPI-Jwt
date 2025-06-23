@@ -287,12 +287,15 @@ Write-Host "  ✓ CONF_REG_SCOPE = $ScopeName"
 
 Write-Host "`n💾 Environment variables saved to AZD environment."
 
-Write-Host "`n📋 To get an access token for this API, use the following commands:"
-Write-Host ""
-Write-Host "   # Login with the API scope:"
-Write-Host "   az login --scope $applicationIdUri/.default"
-Write-Host ""
-Write-Host "   # Get access token:"
-Write-Host "   az account get-access-token --resource $applicationIdUri"
-Write-Host ""
-Write-Host "💡 These commands will authenticate and retrieve a token for accessing the '$ScopeName' scope."
+
+Write-Host "`n🚀 DEMO INSTRUCTIONS:" -ForegroundColor Green
+
+Write-Host "`n📋 To get an access token for this API, use the following commands:" -ForegroundColor Green
+Write-Host "" -ForegroundColor Green
+Write-Host "   # Login with the API scope:" -ForegroundColor Green
+Write-Host "   az login --scope $applicationIdUri/.default" -ForegroundColor Green
+Write-Host "" -ForegroundColor Green
+Write-Host "   # Get access token:" -ForegroundColor Green
+Write-Host "   az account get-access-token --resource $applicationIdUri" -ForegroundColor Green
+Write-Host "" -ForegroundColor Green
+Write-Host "💡 These commands will authenticate and retrieve a token for accessing the '$ScopeName' scope." -ForegroundColor Green
