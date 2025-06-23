@@ -1,4 +1,4 @@
-# azd-apimwithconfAPI
+# azd-apimwithconfAPI-OAuth
 
 This repo contains an AZD template which deploys Azure API Management with a conference API web app as backend which can be deployed to Azure using the [Azure Developer CLI - AZD](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview). 
 
@@ -15,15 +15,15 @@ This repo contains an AZD template which deploys Azure API Management with a con
 
 1. Create a new folder on your machine.
 ```
-mkdir petender/azd-apimwithconfapi
+mkdir rob-foulkrod/azd-apimwithconfAPI-OAuth
 ```
 2. Next, navigate to the new folder.
 ```
-cd petender/azd-apimwithconfapi
+cd rob-foulkrod/azd-apimwithconfAPI-OAuth
 ```
 3. Next, run `azd init` to initialize the deployment.
 ```
-azd init -t petender/azd-apimwithconfapi
+azd init -t rob-foulkrod/azd-apimwithconfAPI-OAuth
 ```
 4. Last, run `azd up` to trigger an actual deployment.
 ```
@@ -34,7 +34,7 @@ azd up
 
 ## What is the demo scenario about?
 
-- Use the [demo guide](https://github.com/petender/azd-apimwithconfAPI/blob/main/demoguide/apimwithconference.md)) for inspiration for your demo
+- Use the [demo guide](https://github.com/rob-foulkrod/azd-apimwithconfAPI-OAuth/blob/main/demoguide/apimwithconference.md)) for inspiration for your demo
 
 ## 💭 Feedback and Contributing
 Feel free to create issues for bugs, suggestions or Fork and create a PR with new demo scenarios or optimizations to the templates. 
