@@ -34,7 +34,7 @@ azd up
 
 ## What is the demo scenario about?
 
-- Use the [demo guide]([https://github.com/rob-foulkrod/azd-apimwithconfAPI-OAuth/blob/main/demoguide/apimwithconference.md]) for inspiration for your demo
+- Use the [DemoGuide](https://github.com/rob-foulkrod/azd-apimwithconfAPI-OAuth/blob/main/demoguide/apimwithconference.md) for inspiration for your demo
 
 ## 💭 Feedback and Contributing
 Feel free to create issues for bugs, suggestions or Fork and create a PR with new demo scenarios or optimizations to the templates. 
