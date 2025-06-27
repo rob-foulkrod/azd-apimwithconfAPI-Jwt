@@ -6,5 +6,5 @@
 - Azure CLI installed and authenticated with sufficient permissions:
     * Application.ReadWrite.All (to create/modify app registrations)
     * Directory.ReadWrite.All (to read tenant information)
-- Azure PowerShell module installed and authenticated:
+- [Azure PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-14.1.0&tabs=powershell&pivots=windows-psgallery) installed and authenticated:
     * Connect-AzAccount -AuthScope https://graph.microsoft.com/
