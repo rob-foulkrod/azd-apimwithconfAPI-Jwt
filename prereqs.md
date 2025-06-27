@@ -3,8 +3,3 @@
 [comment]: <> (don't add any other information, as this is rendered as part of a prereqs element on the webpage)
 
 - [.NET 8 Framework](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-- Azure CLI installed and authenticated with sufficient permissions:
-    * Application.ReadWrite.All (to create/modify app registrations)
-    * Directory.ReadWrite.All (to read tenant information)
-- [Azure PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-14.1.0&tabs=powershell&pivots=windows-psgallery) installed and authenticated:
-    * Connect-AzAccount -AuthScope https://graph.microsoft.com/
