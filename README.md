@@ -1,6 +1,6 @@
 # azd-apimwithconfAPI-OAuth
 
-This repository contains an AZD (Azure Developer CLI) template that deploys Azure API Management alongside a conference API web app as its backend. In addition to the core deployment, the template now also provisions an Entra ID Application Registration and secures a specific API operation using OAuth2 authentication. This enables developers to easily deploy a fully functional, identity-protected API solution to Azure using the Azure Developer CLI (AZD).
+This repository contains an AZD (Azure Developer CLI) template that deploys Azure API Management alongside a conference API web app as its backend. In addition to the core deployment, the template now also provisions an Entra ID Application Registration and secures a specific API operation using OAuth2 authentication. This enables developers to easily deploy a fully functional, identity-protected API solution to Azure using the Azure Developer CLI (AZD). This extends the project created here: https://github.com/petender/azd-apimwithconfAPI
 
 💪 This template scenario is part of the larger **[Microsoft Trainer Demo Deploy Catalog](https://aka.ms/trainer-demo-deploy)**.
 
