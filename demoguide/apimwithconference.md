@@ -38,7 +38,7 @@ This scenario builds on the base deployment and includes all previously created 
 **New in this scenario:**
 - Entra ID Application Registration (OAuth Client)
 
-<img src="./APIM/App_Resistration.png" alt="Entra ID Application Registration" style="width:70%;">
+<img src="https://raw.githubusercontent.com/rob-foulkrod/azd-apimwithconfAPI-OAuth/main/demoguide/APIM/App_Resistration.png" alt="Entra ID Application Registration" style="width:70%;">
 <br></br>
 
 ### 2. Demonstration Steps
